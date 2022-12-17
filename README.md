@@ -18,7 +18,7 @@ In this project, we summarize the paper RelTR: Relational Transformer for scene 
 </p>
 
 ## Claim Validation
-The authors claim RelTR[] has lower number of parameters compared to other scene graph generation models such as FCSGG[].
+The authors claim RelTR[1] has lower number of parameters compared to other scene graph generation models such as FCSGG[2].
 <p align="center">
     <img src="./assets/img/table1-reltr.png" alt="RelTR comparison"> 
   <h5 align="center">
@@ -29,6 +29,23 @@ The authors claim RelTR[] has lower number of parameters compared to other scene
 FCSGG[] has multiple configurations with varying backbone architectures. Since the authors of RelTR do not specify which configuration is used and RelTR uses the ResNet50 as a backbone, we decided it would only be fair to test when both architectures use the same backbone.
 
 
+### Claim Validation: results and discussion
+|Model                |Parameters (M) ↓         |
+|------------------|----------------------------|
+|RelTR              |67.9         |
+|FCSGG              |26.4           |
+
+<i>Table comparing the number of parameters (M) for the models RelTR[1] and FCSGG[2]. ↓ lower is better</i>
+
+We observe that RelTR has more parameters than FCSGG when both architectures use ResNet50 as their backbone.
+
+<b>Result</b>: The claim RelTr has lesser parameters than FCSGG is False.
+
+
+## References
+- [1] https://github.com/yrcong/RelTR
+- [2] https://github.com/liuhengyue/fcsgg
 ### Authors
 - [Shubham Gupta](https://github.com/IamShubhamGupto)
 - [Karan Sharma](https://github.com/ks47)
+
